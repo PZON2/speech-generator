@@ -10,7 +10,13 @@ import requests
 def download_github_code(path):
     filename = path.rsplit("/")[-1]
     os.system("shred -u {}".format(filename))
-    os.system("wget https://raw.githubusercontent.com/hse-aml/intro-to-dl/master/{} -O {}".format(path, filename))
+    os.system("wget https://raw.githubusercontent.com/PZON2/speech-generator/master/{} -O {}".format(path, filename))
+    
+ def download_external_code(path):
+    filename = path.rsplit("/")[-1]
+    os.system("shred -u {}".format(filename))
+    os.system("wget https://raw.githubusercontent.com/mkearney/trumptweets/master/{} -O {}".format(path, filename))   
+    
 
 
 def setup_common():
@@ -68,8 +74,7 @@ def setup_week5():
     download_github_code("week5/data_copyright")
     download_github_code("week5/mtg_card_names.txt")
     download_github_code("week5/names")
-    download_github_code("week5/tweets")
-    download_utils.download_week_5_resources("../readonly/week5")
+    download_github_code("data/trumptweets-1515775693.tweets.csv")
     download_github_code("week5/submit.py")
 
 
