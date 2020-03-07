@@ -69,6 +69,7 @@ def setup_week5():
     download_github_code("week5/mtg_card_names.txt")
     download_github_code("week5/names")
     download_github_code("week5/tweets")
+    download_utils.download_week_5_resources("../readonly/week5")
     download_github_code("week5/submit.py")
 
 
