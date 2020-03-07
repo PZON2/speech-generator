@@ -12,7 +12,7 @@ def download_github_code(path):
     os.system("shred -u {}".format(filename))
     os.system("wget https://raw.githubusercontent.com/PZON2/speech-generator/master/{} -O {}".format(path, filename))
     
- def download_external_code(path):
+def download_external_code(path):
     filename = path.rsplit("/")[-1]
     os.system("shred -u {}".format(filename))
     os.system("wget https://raw.githubusercontent.com/mkearney/trumptweets/master/{} -O {}".format(path, filename))   
