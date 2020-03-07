@@ -76,6 +76,7 @@ def setup_week5():
     download_github_code("week5/tl")
     download_external_code("data/trumptweets-1515775693.tweets.csv")
     download_github_code("week5/submit.py")
+    import download_utils
     download_utils.download_week_5_resources("../readonly/week5")
 
 
