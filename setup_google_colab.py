@@ -74,7 +74,7 @@ def setup_week5():
     download_github_code("week5/data_copyright")
     download_github_code("week5/mtg_card_names.txt")
     download_github_code("week5/names")
-    download_github_code("data/trumptweets-1515775693.tweets.csv")
+    download_external_code("data/trumptweets-1515775693.tweets.csv")
     download_github_code("week5/submit.py")
 
 
